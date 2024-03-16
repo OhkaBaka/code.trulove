@@ -1,3 +1,4 @@
+/*
 const path = require('path');
 const express = require('express');
 
@@ -18,9 +19,9 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
-/*
-Original cPanel server
 
+Original cPanel server
+*/
 var http = require('http');
 var server = http.createServer(function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
@@ -30,4 +31,3 @@ var server = http.createServer(function(req, res) {
     res.end(response);
 });
 server.listen();
-*/
