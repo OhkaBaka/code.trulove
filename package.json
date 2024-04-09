@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "react": "^18.2.0"
+  },
+  "name": "code.trulove.cc",
+  "version": "1.0.0",
+  "description": "Showcase Code Sandbox",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OhkaBaka/code.trulove.git"
+  },
+  "author": "Christopher TruLove",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OhkaBaka/code.trulove/issues"
+  },
+  "homepage": "https://github.com/OhkaBaka/code.trulove#readme",
+  "keywords": []
+}
