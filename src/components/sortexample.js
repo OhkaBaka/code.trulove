@@ -78,6 +78,5 @@ const items = sizes.reduce(
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <List items={items}/>,
-);
+
+export const SortExample = <List items={items}/>
