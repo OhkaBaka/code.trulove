@@ -1,6 +1,7 @@
+'use client'
 const { Fragment, useState } = React;
 
-
+export const SortExample=()=>{
 // Implement a feature to allow item selection with the following requirements:
 // 1. Clicking an item selects/unselects it.
 // 2. Multiple items can be selected at a time.
@@ -79,4 +80,5 @@ const items = sizes.reduce(
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-export const SortExample = <List items={items}/>
+return <List items={items}/>
+}
