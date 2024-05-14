@@ -15,7 +15,7 @@ const Bax = ({baxSize=24, bgSrc=""})=>{
   const baxes = [];
   for(let yix=0; yix<baxHeight; yix++){
     for(let xix=0; xix<baxWidth; xix++){
-      baxes.push(<div key={`bax_${xix}_${yix}`} style={{position: "absolute", top:`${yix*baxSize+baxVPad}px`, left:`${xix*baxSize+baxHPad}px`, width:baxSize-3, height:baxSize-3, borderWidth: "1px", borderColor:"rgba(60, 120, 40, 0.5)", backgroundColor:"rgba(40, 80, 20, 0.5)"}}className={`bax row_${yix} col_${xix}`} />);
+      baxes.push(<div key={`bax_${xix}_${yix}`} style={{position: "absolute", top:`${yix*baxSize+baxVPad}px`, left:`${xix*baxSize+baxHPad}px`, width:baxSize-3, height:baxSize-3, borderWidth: "1px", borderColor:"rgba(80, 140, 60, 0.5)", backgroundColor:"rgba(60, 120, 40, 0.5)"}}className={`bax row_${yix} col_${xix}`} />);
     }
   }
 
@@ -25,7 +25,6 @@ const Bax = ({baxSize=24, bgSrc=""})=>{
       alt="background image of pine trees in fog"
       fill
       style={{objectFit:'cover'}}
-      className="z-1"
     />)}
     { baxes }
   </div>);
