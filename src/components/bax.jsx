@@ -1,8 +1,9 @@
 'use client'
 import React, {useRef} from 'react';
 import {useDimensions} from '../hooks/useDimensions';
+import Image from "next/image";
 
-const Bax = ({baxSize=24})=>{
+const Bax = ({baxSize=24, bgSrc=""})=>{
   const ref = useRef(null)
   const {width, height} = useDimensions(ref)
 
@@ -19,6 +20,13 @@ const Bax = ({baxSize=24})=>{
   }
 
   return (<div ref={ref} style={{position:"absolute", zIndex:-1, height: "100%", width: "100%"}}>
+    { bgSrc != "" && (<Image
+      src={bgSrc} 
+      alt="background image of pine trees in fog"
+      fill
+      style={{objectFit:'cover'}}
+      className="z-1"
+    />)}
     { baxes }
   </div>);
 }
