@@ -15,7 +15,7 @@ const Bax = ({baxSize=12, bgSrc=""})=>{
   const baxes = [];
   for(let yix=0; yix<baxHeight; yix++){
     for(let xix=0; xix<baxWidth; xix++){
-      baxes.push(<div key={`bax_${xix}_${yix}`} style={{position: "absolute", top:`${yix*baxSize+baxVPad}px`, left:`${xix*baxSize+baxHPad}px`, width:baxSize-3, height:baxSize-3, borderWidth: "1px", borderColor:"rgba(100, 200, 60, 0.5)", backgroundColor:"rgba(120, 220, 80, 0.5)"}}className={`bax row_${yix} col_${xix}`} />);
+      baxes.push(<div key={`bax_${xix}_${yix}`} style={{position: "absolute", top:`${yix*baxSize+baxVPad}px`, left:`${xix*baxSize+baxHPad}px`, width:baxSize-3, height:baxSize-3, borderWidth: "1px", borderColor:"rgba(150, 200, 100, 0.5)", backgroundColor:"rgba(170, 220, 120, 0.5)"}}className={`bax row_${yix} col_${xix}`} />);
     }
   }
 
