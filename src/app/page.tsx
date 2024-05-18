@@ -1,13 +1,19 @@
+'use client'
+import { useState, useEffect } from 'react'
 import Bax from '../components/bax';
 import {LinkPanel} from '../components/linkpanel';
+import {Slider} from '@mui/material';
 
 export default function Home() {
+  const [baxSize,setBaxSize] = useState(5);
+  
   return (
     <>
-    <Bax bgSrc={"/images/bg.jpg"} />
+    {console.log("Rendering")}
+    <Bax baxSize={baxSize} bgSrc={"/images/bg.jpg"} />
     <main className="flex min-h-screen flex-col items-center justify-between p-12">
       <h1 className="w-full font-black text-center text-4xl text-green-950">
-        Christopher Trulove's Portfolio Playground
+        Christopher Trulove&apos;s Portfolio Playground
       </h1>
 
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -18,6 +24,14 @@ export default function Home() {
           My background is a dynamically generated array of boxes that will always fill the viewport... there is a future in its design, hover and motion effects, but for now. Neat! Boxes!
         </p>
       </div>
+      <Slider defaultValue={30}
+        valueLabelDisplay="auto"
+        step={20}
+        marks
+        min={20}
+        max={100}
+        onChange={(evt:Event, value:number|number[], thumb:number)=>{setBaxSize((value instanceof Array) ? value[0] : value)}}
+      />
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <LinkPanel

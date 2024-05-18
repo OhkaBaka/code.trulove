@@ -3,7 +3,7 @@ import React, {useRef} from 'react';
 import {useDimensions} from '../hooks/useDimensions';
 import Image from "next/image";
 
-const Bax = ({baxSize=12, bgSrc=""})=>{
+const Bax = ({baxSize=25, bgSrc=""})=>{
   const ref = useRef(null)
   const {width, height} = useDimensions(ref)
 
@@ -11,6 +11,8 @@ const Bax = ({baxSize=12, bgSrc=""})=>{
   const baxHPad = parseInt((width%baxSize)/2);
   const baxHeight = parseInt(height/baxSize);
   const baxVPad = parseInt((height%baxSize)/2);
+
+  console.log("BaxSize", baxSize);
 
   const baxes = [];
   for(let yix=0; yix<baxHeight; yix++){
