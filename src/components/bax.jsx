@@ -3,8 +3,8 @@ import React, {useRef} from 'react';
 import {useDimensions} from '../hooks/useDimensions';
 import Image from "next/image";
 
-const Bax = ({baxSize=25, bgSrc=""})=>{
-  baxSize = (baxSize >=25 ) ? baxSize : 25;
+const Bax = ({baxSize=20, bgSrc=""})=>{
+  baxSize = (baxSize >=20 ) ? baxSize : 20;
   const ref = useRef(null)
   const {width, height} = useDimensions(ref)
 

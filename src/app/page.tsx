@@ -5,7 +5,7 @@ import {LinkPanel} from '../components/linkpanel';
 import {Slider} from '@mui/material';
 
 export default function Home() {
-  const [baxSize,setBaxSize] = useState(5);
+  const [baxSize,setBaxSize] = useState(40);
   
   return (
     <>
@@ -24,13 +24,14 @@ export default function Home() {
           My background is a dynamically generated array of boxes that will always fill the viewport... there is a future in its design, hover and motion effects, but for now. Neat! Boxes!
         </p>
       </div>
-      <Slider defaultValue={40}
+      <Slider defaultValue={baxSize}
         valueLabelDisplay="auto"
-        step={20}
+        step={10}
         marks
         min={20}
-        max={100}
+        max={200}
         onChange={(evt:Event, value:number|number[], thumb:number)=>{setBaxSize((value instanceof Array) ? value[0] : value)}}
+        className="w-full max-w-5xl"
       />
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
