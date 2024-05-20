@@ -24,7 +24,7 @@ export default function Home() {
           My background is a dynamically generated array of boxes that will always fill the viewport... there is a future in its design, hover and motion effects, but for now. Neat! Boxes!
         </p>
       </div>
-      <Slider defaultValue={30}
+      <Slider defaultValue={40}
         valueLabelDisplay="auto"
         step={20}
         marks

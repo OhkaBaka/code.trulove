@@ -4,6 +4,7 @@ import {useDimensions} from '../hooks/useDimensions';
 import Image from "next/image";
 
 const Bax = ({baxSize=25, bgSrc=""})=>{
+  baxSize = (baxSize >=25 ) ? baxSize : 25;
   const ref = useRef(null)
   const {width, height} = useDimensions(ref)
 
