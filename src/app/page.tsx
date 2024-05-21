@@ -9,7 +9,6 @@ export default function Home() {
   
   return (
     <>
-    {console.log("Rendering")}
     <Bax baxSize={baxSize} bgSrc={"/images/bg.jpg"} />
     <main className="flex min-h-screen flex-col items-center justify-between p-12">
       <h1 className="w-full font-black text-center text-4xl text-green-950">
@@ -21,7 +20,7 @@ export default function Home() {
           Okay so I am just rebuilding this in Next.js at the moment... so it is a mess.
         </p>
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 pb-6 text-black backdrop-blur-2xl lg:static lg:w-auto  lg:rounded-xl lg:border bg-gray-200 lg:p-4">
-          My background is a dynamically generated array of boxes that will always fill the viewport... there is a future in its design, hover and motion effects, but for now. Neat! Boxes!
+          My background is a dynamically generated array of boxes that will always fill the viewport... there is a future in its design, hover and motion effects, but for now, enjoy the slider that lets you change the size of the background boxes.
         </p>
       </div>
       <Slider defaultValue={baxSize}
