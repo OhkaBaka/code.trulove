@@ -13,7 +13,7 @@ const Bax = ({baxSize=20, bgSrc=""})=>{
   const baxHeight = parseInt(height/baxSize);
   const baxVPad = parseInt((height%baxSize)/2);
 
-  console.log("BaxSize", baxSize);
+  console.log("Max Bax", baxWidth*baxHeight);
 
   const baxes = [];
   for(let yix=0; yix<baxHeight; yix++){
