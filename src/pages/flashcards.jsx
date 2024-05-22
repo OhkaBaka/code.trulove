@@ -31,11 +31,11 @@ export default function FlashCards() {
 
   return (
   <>
-    <div id="card" style={{border:"1px solid blue", width:"50px", height:"50px;"}} onClick={()=>{setFlipped(!flipped);console.log(flipped);}} >
+    <div id="card" style={{border:"1px solid blue", width:"50px", height:"50px"}} onClick={()=>{setFlipped(!flipped);console.log(flipped);}} >
       {!flipped && (
-          <div id="front" style={{border:"1px solid red", width:"50px", height:"50px;"}}>{cards[currentCard].question}</div>
+          <div id="front" style={{border:"1px solid red", width:"50px", height:"50px"}}>{cards[currentCard].question}</div>
       ) || (
-        <div id="back" style={{border:"1px solid green", width:"50px", height:"50px;"}}>{cards[currentCard].answer}</div>
+        <div id="back" style={{border:"1px solid green", width:"50px", height:"50px"}}>{cards[currentCard].answer}</div>
       )}
     </div>
     <Button onClick={()=>{clickPrevious()}} >Previous</Button>

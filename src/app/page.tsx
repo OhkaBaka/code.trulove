@@ -37,7 +37,7 @@ export default function Home() {
         <LinkPanel
           link="/flashcards"
           title="FlashCards"
-          description="5/21/24 This is a quick flashcard app I built in Next (React) during a technical interview."
+          description="5/21/24 This is a quick flashcard applet I built in Next (React) during a technical interview."
         />
         <LinkPanel
           link="https://leeduser.buildinggreen.com/credit/NC-v4.1/IPc1"
