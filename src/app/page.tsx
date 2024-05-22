@@ -35,6 +35,11 @@ export default function Home() {
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <LinkPanel
+          link="/flashcards"
+          title="FlashCards"
+          description="5/21/24 This is a quick flashcard app I built in Next (React) during a technical interview."
+        />
+        <LinkPanel
           link="https://leeduser.buildinggreen.com/credit/NC-v4.1/IPc1"
           title="BuildingGreen"
           description="I managed the original migration of BuildingGreen to Drupal from ColdFusion. Not much of the site still has my obvious fingerprints on it, but some elements, like the Leed certification selector on the top of this page were mine."
