@@ -4,13 +4,15 @@ import Bax from '../components/bax';
 import {LinkPanel} from '../components/linkpanel';
 import {Slider} from '@mui/material';
 import Link from 'next/link';
+import { MuiColorInput } from 'mui-color-input'
 
 export default function Home() {
   const [baxSize,setBaxSize] = useState(40);
+  const [baxColor,setBaxColor] = useState("rgb(170, 220, 120)");
   
   return (
     <>
-    <Bax baxSize={baxSize} bgSrc={"/images/bg.jpg"} />
+    <Bax baxSize={baxSize} baxColor={baxColor} bgSrc={"/images/bg.jpg"} />
     <main className="flex min-h-screen flex-row items-center justify-between p-12">
       <div className="w-1/5 min-h-full p-1">
         <h2 className="font-bold text-lg text-white rounded bg-slate-600 p-2 my-2">Local Examples</h2>
@@ -26,7 +28,7 @@ export default function Home() {
             Built Using: Next.js - TailWind - Material UI
           </p>
           <p className="w-full justify-center p-2 border text-black backdrop-blur-2xl">
-            My background is a dynamically generated array of boxes that will always fill the viewport... there is a future in its design, hover and motion effects, but for now, enjoy the slider that lets you change the size of the background boxes.
+            My background is a dynamically generated array of boxes that will always fill the viewport... there is a future in its design, hover and motion effects, but for now, enjoy the the controls to change the size and color.
           </p>
         </div>
         <Slider defaultValue={baxSize}
@@ -38,7 +40,7 @@ export default function Home() {
           onChange={(evt:Event, value:number|number[], thumb:number)=>{setBaxSize((value instanceof Array) ? value[0] : value)}}
           className="w-full"
         />
-
+        <MuiColorInput format="rgb" value={baxColor} onChange={(color)=>{setBaxColor(color)}} />
         <div className="mb-32 grid text-center mb-0 w-full grid-cols-4 text-left">
           <LinkPanel
             link="https://leeduser.buildinggreen.com/credit/NC-v4.1/IPc1"
@@ -76,6 +78,7 @@ export default function Home() {
         <h2 className="font-bold text-lg text-white rounded bg-slate-600 p-2 my-2">Thoughts on this new Portfolio</h2>
           <div style={{backgroundColor:"rgba(71, 85, 105, .50)"}} className="border rounded p-2 mt-2 block border-stone-100 text-stone-100">
             As I build this site out I'm reminded of all the fun things I've built in the distant past that were testbeds or precursors for things I never considered, it might be interesting to take some of those to fruition, just to see if my ideas from years ago might have teeth.
+            I added "mui-color-input" to add a color picker to change the background color, and it is WAY cooler than I thought it would be.
           </div>
       </div>
 

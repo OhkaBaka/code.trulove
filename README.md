@@ -12,8 +12,9 @@ c.t.trulove@gmail.com
 
 
 ## Portfolio site code, always a work in progress.
+6/5/2024 - I added "mui-color-input" to add a color picker to change the background color, and it is WAY cooler than I thought it would be.
 
-5/28/2024 - Redesigned the landing page to put local links in the left column, I put some verbage in the right column I'll likely change to display the README in the near future.
+5/28/2024 - Redesigned the landing page to put local links in the left column, I put some verbage in the right column I'll likely change to display the README in the near future. Havent decided yet how to manage those in mobile yet.
 
 5/15/2024 - Initial functional deploy and various tweaks
 - Bax isn't fixed, need to fix that... fix... that... sigh

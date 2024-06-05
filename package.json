@@ -12,7 +12,11 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.18",
+    "axios": "^1.7.2",
+    "fs": "^0.0.1-security",
+    "mui-color-input": "^2.0.3",
     "next": "^14.2.3",
+    "node-fetch": "^3.3.2",
     "react": "^18",
     "react-dom": "^18"
   },
