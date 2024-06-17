@@ -1,4 +1,5 @@
 'use client'
+let dynamoRoute= require('./dynamo');
 
 export default function Playground() {
 

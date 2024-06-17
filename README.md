@@ -12,6 +12,8 @@ c.t.trulove@gmail.com
 
 
 ## Portfolio site code, always a work in progress.
+6/17/2024 - Adding a simple position system (x/y/z) to build a little multiplayer experience... should be a fun testbed for some game stuff, and some AWS stuff.
+
 6/5/2024 - I added "mui-color-input" to add a color picker to change the background color, and it is WAY cooler than I thought it would be.
 
 5/28/2024 - Redesigned the landing page to put local links in the left column, I put some verbage in the right column I'll likely change to display the README in the near future. Havent decided yet how to manage those in mobile yet.
